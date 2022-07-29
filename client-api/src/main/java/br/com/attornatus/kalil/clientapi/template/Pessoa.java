@@ -26,7 +26,7 @@ public class Pessoa {
 	@Column(nullable = false)
 	private ArrayList<String> endereco;
 	
-	@Column 
+	@Column(nullable = false)
 	private byte enderecoPrincipal;
 	
 	public Long getId() {
