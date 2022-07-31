@@ -8,6 +8,4 @@ import br.com.attornatus.kalil.clientapi.template.Pessoa;
 @Repository
 public interface PessoaData extends JpaRepository<Pessoa, Long> {
 	
-	
-	
 }

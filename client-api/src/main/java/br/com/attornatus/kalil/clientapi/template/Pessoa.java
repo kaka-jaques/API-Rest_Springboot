@@ -60,6 +60,10 @@ public class Pessoa {
 	public void setEndereco(ArrayList<String> endereco) {
 		this.endereco = endereco;
 	}
+	
+	public void setEnderecoString(String endereco) {
+		this.endereco.add(this.endereco.size(), endereco);
+	}
 
 	public byte getEnderecoPrincipal() {
 		return enderecoPrincipal;
