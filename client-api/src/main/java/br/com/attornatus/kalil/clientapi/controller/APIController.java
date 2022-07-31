@@ -50,6 +50,7 @@ public class APIController {
 		pessoaForm.setEndereco(pessoaData.getReferenceById(id).getEndereco());
 		
 		return pessoaForm;
+		
 	}
 
 	// ADICIONAR TODOS OS DADOS POR JSON
@@ -74,8 +75,8 @@ public class APIController {
 	// INSERE QUAL O ENDERECO PRINCIPAL
 	@PutMapping(value = "/end/{id}/{enderecoPrincipal}")
 	public Pessoa selectEndereco(@PathVariable Long id, @PathVariable byte enderecoPrincipal) {
-		pessoaData.getReferenceById(id).setEnderecoPrincipal(enderecoPrincipal);
-		return pessoaData.getReferenceById(id);
+		
+		return pessoaData.save(attEndereco(id, enderecoPrincipal));
 	}
 
 	// DELETA DADOS DE USUÁRIO POR ID
@@ -104,6 +105,21 @@ public class APIController {
 			pessoa.setEnderecoPrincipal(pessoaBody.getEnderecoPrincipal());
 
 		return pessoa;
+	}
+	
+	// FUNÇÃO PARA NÃO SELECIONAR ENDEREÇO PRINCIPAL EM UM INDEX NÃO EXISTENTE
+	public Pessoa attEndereco(Long id, byte enderecoPrincipal) {
+
+		pessoa = pessoaData.getReferenceById(id);
+		
+		if(enderecoPrincipal> pessoa.getEndereco().size()) {
+			pessoa.setEnderecoPrincipal((byte) pessoa.getEndereco().size());
+		}else {
+			pessoa.setEnderecoPrincipal(enderecoPrincipal);
+		}
+		
+		return pessoa;
+		
 	}
 
 }
