@@ -1,26 +1,26 @@
-# Avaliacao-Backend-Attornatus
-Teste Avaliativo da Empresa Attornatus para Vaga de Desenvolvedor Back-End Java
+# API Rest Springboot
+### Programa proposto ao desafio da vaga da empresa Attornatus.
+### Desenvolvido em Java, utilizando Springboot, Web Service Spring, Banco de Dados H2.
 
 ## DESAFIO PROPOSTO
-Desafio Java
 
-Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve permitir:  
->1.	Criar uma pessoa X 
+### Usando Spring boot, crie uma API simples para gerenciar Pessoas. Esta API deve permitir:  
+>1. [X]	Criar uma pessoa  
 >
->1.	Editar uma pessoa X
+>1. [X]	Editar uma pessoa 
 >
->1.	Consultar uma pessoa X 
+>1. [X]	Consultar uma pessoa 
 >
->1.	Listar pessoas X
+>1. [X]	Listar pessoas 
 >
->1.	Criar endereço para pessoa X 
+>1. [X]	Criar endereço para pessoa 
 >
->1.	Listar endereços da pessoa X
+>1. [X]	Listar endereços da pessoa 
 >
->1.	Poder informar qual endereço é o principal da pessoa X   
+>1. [X]	Poder informar qual endereço é o principal da pessoa    
 
 ---
-Uma Pessoa deve ter os seguintes campos:  
+### Uma Pessoa deve ter os seguintes campos:  
 >1. Nome
 >
 >1. Data de nascimento
