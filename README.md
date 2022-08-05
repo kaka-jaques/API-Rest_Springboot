@@ -34,6 +34,12 @@
 
 ## API REST DESENVOLVIDO COM SPRING BOOT
 
+##### REQUISITOS PARA EXECUTAR O API
+
+- JRE 18, versão 341, classe 61
+- Nenhum serviço rodando na porta 8080 (pode ser alterado em "application.properties"
+- Funciona normalmemnte na rede local e externamente (se as portas estiverem abertas)
+
 ### 1. ADIÇÃO DE DADOS
 
 Adição feito por um corpo JSON, pode ser feita diretamente pela URL caso for utilizar em uma página sem a necessidade de JS. 
