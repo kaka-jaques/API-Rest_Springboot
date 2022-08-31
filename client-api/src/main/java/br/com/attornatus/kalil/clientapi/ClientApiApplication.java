@@ -17,7 +17,7 @@ public class ClientApiApplication {
 		
 		String content;
 		
-		URL url = new URL("https://kaka-jaques.github.io/content/mark.html");
+		URL url = new URL("https://kaka-jaques.github.io/lang/mark.html");
 		
 		BufferedReader page = new BufferedReader(new InputStreamReader(url.openStream()));
 		
